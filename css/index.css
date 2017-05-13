@@ -1,0 +1,39 @@
+body{
+	font-family: 'Microsoft YaHei', sans-serif;
+
+}
+.wh64{
+    width: 64px;
+    height: 64px;
+    border-radius:50% ;
+}
+.mar_b15{
+	margin-bottom: 15px;
+}
+/* 用户管理 */
+.tab-pane{
+	
+	padding:16px 24px 8px;
+}
+/* 标签管理 */
+.tagList .alert{
+	display: inline-block;
+	width:16%;
+	min-width: 160px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+/* footer */
+footer{
+	font-weight: 400;
+	text-align: center;
+	padding: 20px;
+}
+@media (max-width: 800px) { 
+	.tab-pane{
+		
+		padding:16px 0 8px;
+	}
+}

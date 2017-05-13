@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>用户管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-Xqcy5ttufkC3rBa8EdiAyA1VgOGrmel2Y+wxm4K3kI3fcjTWlDWrlnxyD6hOi3PF" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!-- 导航 -->
+
+<nav class="navbar navbar-default">
+	<div class="container">
+
+	  	<div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Maizi Admin</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+	            <li><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+	            <li class="active"><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
+	            <li><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>
+		      </ul>
+
+		      <ul class="nav navbar-nav navbar-right">
+	                <li class="dropdown">
+	                    <a id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                        admin
+	                        <span class="caret"></span>
+	                    </a>
+	                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+	                        <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+	                    </ul>
+	                </li>
+	                <li><a href="#bbs"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+	        	</ul>
+	    	</div><!-- /.navbar-collapse -->
+	  	</div><!-- /.container-fluid -->
+	</div>
+</nav>
+
+<div class="container">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#mgtCon" aria-controls="mgtCon" role="tab" data-toggle="tab">内容管理</a></li>
+    <li role="presentation"><a href="#addCon" aria-controls="addCon" role="tab" data-toggle="tab">添加内容</a></li>
+  </ul>
+   
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+  	<!-- 内容管理 -->
+    <div role="tabpanel" class="tab-pane active" id="mgtCon">
+    	<table class="table">
+		  <thead>
+	        <tr>
+	           <th>文章标题</th>
+	           <th>作者</th>
+	           <th>发布时间</th>
+	           <th>操作</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+					    
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th scope="row">泛Mooc职业教育， 效果和就业为王</th>
+	            <td>朱朝兵</td>
+	            <td>2015/08/08</td>
+	            <td>
+	                <!-- Split button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-primary">操作</button>
+					  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">编辑</a></li>
+					    <li><a href="#">删除</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">置顶</a></li>
+					  </ul>
+					</div>
+	            </td>
+	        </tr>
+	      </tbody>
+		</table>
+		<nav aria-label="Page navigation" class="text-center">
+			  <ul class="pagination">
+			    <li class="previous disabled">
+			      <a href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li>
+			      <a href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+		  </nav>
+    </div>
+    <!-- 添加内容 -->
+    <div role="tabpanel" class="tab-pane" id="addCon">
+    	<form>
+		  <div class="form-group">
+		    <label for="textTitle">标题</label>
+		    <input type="text" class="form-control" id="textTitle" placeholder="请输入文章标题">
+		  </div>
+		  <div class="form-group">
+		    <label for="textCon">文章内容</label>
+		    <textarea class="form-control" rows="10" id="textCon" placeholder="请输入文章正文部分"></textarea>
+		  </div>
+		  
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> 全局置顶
+		    </label>
+		    <button type="submit" class="btn btn-primary pull-right">发布文章</button>
+		  </div>
+		  
+		</form>
+    </div>
+    
+  </div>
+
+</div>
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;www.maiziedu.com&nbsp;&nbsp;蜀ICP备13014270号-4
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+	$(function(){
+		
+	});
+</script>
+
+</body>
+
+</html>
